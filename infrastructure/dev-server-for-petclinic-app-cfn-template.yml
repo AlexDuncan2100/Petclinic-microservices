@@ -10,7 +10,7 @@ curl -L "https://github.com/docker/compose/releases/download/1.26.2/docker-compo
 chmod +x /usr/local/bin/docker-compose
 yum install git -y
 yum install java-11-amazon-corretto -y
-git clone https://github.com/clarusway/petclinic-microservices.git
+git clone https://github.com/AlexDuncan2100/petclinic-microservices.git
 cd petclinic-microservices
 git fetch
 git checkout dev
