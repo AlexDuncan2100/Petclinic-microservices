@@ -172,10 +172,16 @@ services:
       - clarusnet
     ports:
     - 9091:9090
-
-networks:
-  clarusnet:
-    driver: overlay
+  
+  mysql-server:
+    image: mysql:5.7.8
+    environment: 
+      MYSQL_ROOT_PASSWORD: petclinic
+      MYSQL_DATABASE: petclinic
+    networks:
+      - clarusnet
+    ports:
+      - 3306:3306
 
 networks:
   clarusnet:
